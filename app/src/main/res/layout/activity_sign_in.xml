@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignInActivity">
+
+    <ImageView
+        android:id="@+id/logo_image"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/choco_01"
+        app:layout_constraintBottom_toTopOf="@+id/id_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/id_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/id_title"
+        app:layout_constraintBottom_toTopOf="@+id/id_input"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo_image" />
+
+    <EditText
+        android:id="@+id/id_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="아이디를 입력해주세요."
+        android:inputType="text"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/pw_title"
+        app:layout_constraintStart_toStartOf="@+id/id_title"
+        app:layout_constraintTop_toBottomOf="@+id/id_title" />
+
+    <EditText
+        android:id="@+id/pw_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="비밀번호를 입력해주세요."
+        android:inputType="textPassword"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/btn_signin"
+        app:layout_constraintStart_toStartOf="@+id/pw_title"
+        app:layout_constraintTop_toBottomOf="@+id/pw_title" />
+
+    <TextView
+        android:id="@+id/pw_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/pw_title"
+        app:layout_constraintBottom_toTopOf="@+id/pw_input"
+        app:layout_constraintStart_toStartOf="@+id/id_input"
+        app:layout_constraintTop_toBottomOf="@+id/id_input" />
+
+    <Button
+        android:id="@+id/btn_signin"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/box_black"
+        android:text="@string/btn_login"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toTopOf="@+id/btn_signup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pw_input" />
+
+    <Button
+        android:id="@+id/btn_signup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box_black"
+        android:text="@string/btn_signup"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn_signin" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

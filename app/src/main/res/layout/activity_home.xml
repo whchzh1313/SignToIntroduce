@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff000000"
+    tools:context=".HomeActivity">
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:alpha="0.2"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/earth" />
+
+    <ImageView
+        android:id="@+id/choco1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_dot" />
+
+    <ImageView
+        android:id="@+id/choco2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/white_dot" />
+
+    <ImageView
+        android:id="@+id/choco3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/white_dot" />
+
+    <ImageView
+        android:id="@+id/choco4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/white_dot" />
+
+    <ImageView
+        android:id="@+id/choco5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/white_dot" />
+
+    <TextView
+        android:id="@+id/dataId"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="아이디 : spa001"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/dataName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <TextView
+        android:id="@+id/dataName"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="이름 : 이화민"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/dataAge"
+        app:layout_constraintEnd_toEndOf="@+id/dataId"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/dataId"
+        app:layout_constraintTop_toBottomOf="@+id/dataId" />
+
+    <TextView
+        android:id="@+id/dataAge"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="나이 : 23"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/dataMBTI"
+        app:layout_constraintEnd_toEndOf="@+id/dataName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/dataName"
+        app:layout_constraintTop_toBottomOf="@+id/dataName" />
+
+    <TextView
+        android:id="@+id/dataMBTI"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="MBTI : ENFP"
+        android:textColor="#ffffff"
+        app:layout_constraintBottom_toTopOf="@+id/btnFinish"
+        app:layout_constraintEnd_toEndOf="@+id/dataAge"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/dataAge"
+        app:layout_constraintTop_toBottomOf="@+id/dataAge" />
+
+    <Button
+        android:id="@+id/btnFinish"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/box_black"
+        android:text="@string/btn_finish"
+        android:textColor="#fafafa"
+        app:cornerRadius="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/dataMBTI"
+        app:layout_constraintStart_toStartOf="@+id/dataMBTI" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActiviy">
+
+    <EditText
+        android:id="@+id/signup_id_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/id_hint"
+        android:inputType="text"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/signup_pw_title"
+        app:layout_constraintEnd_toEndOf="@+id/signup_id_title"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/signup_id_title"
+        app:layout_constraintTop_toBottomOf="@+id/signup_id_title" />
+
+    <TextView
+        android:id="@+id/signup_name_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/name_title"
+        app:layout_constraintBottom_toTopOf="@+id/signup_name_input"
+        app:layout_constraintEnd_toEndOf="@+id/signup_logo"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/signup_logo"
+        app:layout_constraintTop_toBottomOf="@+id/signup_logo" />
+
+    <EditText
+        android:id="@+id/signup_pw_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/pw_hint"
+        android:inputType="textPassword"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/signup_mbti_title"
+        app:layout_constraintEnd_toEndOf="@+id/signup_pw_title"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/signup_pw_title"
+        app:layout_constraintTop_toBottomOf="@+id/signup_pw_title" />
+
+    <EditText
+        android:id="@+id/signup_name_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/name_hint"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/signup_id_title"
+        app:layout_constraintEnd_toEndOf="@+id/signup_name_title"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/signup_name_title"
+        app:layout_constraintTop_toBottomOf="@+id/signup_name_title" />
+
+    <TextView
+        android:id="@+id/signup_pw_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/pw_title"
+        app:layout_constraintBottom_toTopOf="@+id/signup_pw_input"
+        app:layout_constraintEnd_toEndOf="@+id/signup_id_input"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/signup_id_input"
+        app:layout_constraintTop_toBottomOf="@+id/signup_id_input" />
+
+    <TextView
+        android:id="@+id/signup_id_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/id_title"
+        app:layout_constraintBottom_toTopOf="@+id/signup_id_input"
+        app:layout_constraintEnd_toEndOf="@+id/signup_name_input"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/signup_name_input"
+        app:layout_constraintTop_toBottomOf="@+id/signup_name_input" />
+
+    <Button
+        android:id="@+id/signup_btn_signup"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/box_black"
+        android:text="@string/btn_signup"
+        android:textColor="#fafafa"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/signup_mbti_input"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/signup_mbti_input"
+        app:layout_constraintTop_toBottomOf="@+id/signup_mbti_input" />
+
+    <ImageView
+        android:id="@+id/signup_logo"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:src="@drawable/choco_05"
+        app:layout_constraintBottom_toTopOf="@+id/signup_name_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <EditText
+        android:id="@+id/signup_mbti_input"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/mbti_hint"
+        android:textColorHint="#888888"
+        app:layout_constraintBottom_toTopOf="@+id/signup_btn_signup"
+        app:layout_constraintEnd_toEndOf="@+id/signup_mbti_title"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/signup_mbti_title"
+        app:layout_constraintTop_toBottomOf="@+id/signup_mbti_title" />
+
+    <TextView
+        android:id="@+id/signup_mbti_title"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/mbti_title"
+        app:layout_constraintBottom_toTopOf="@+id/signup_mbti_input"
+        app:layout_constraintEnd_toEndOf="@+id/signup_pw_input"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/signup_pw_input"
+        app:layout_constraintTop_toBottomOf="@+id/signup_pw_input" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
