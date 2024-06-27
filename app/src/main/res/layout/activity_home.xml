@@ -67,7 +67,7 @@
         android:id="@+id/dataId"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="아이디 : spa001"
+        android:text="아이디 :"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toTopOf="@+id/dataName"
         app:layout_constraintEnd_toEndOf="parent"
@@ -81,7 +81,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="이름 : 이화민"
+        android:text="이름 :"
         android:textColor="#ffffff"
         app:layout_constraintBottom_toTopOf="@+id/dataAge"
         app:layout_constraintEnd_toEndOf="@+id/dataId"
@@ -107,26 +107,62 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:text="MBTI : ENFP"
+        android:text="MBTI :"
         android:textColor="#ffffff"
-        app:layout_constraintBottom_toTopOf="@+id/btnFinish"
+        app:layout_constraintBottom_toTopOf="@+id/layout_btn_finish"
         app:layout_constraintEnd_toEndOf="@+id/dataAge"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="@+id/dataAge"
         app:layout_constraintTop_toBottomOf="@+id/dataAge" />
 
-    <Button
-        android:id="@+id/btnFinish"
+<!--    <Button-->
+<!--        android:id="@+id/btnFinish"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="40dp"-->
+<!--        android:background="@drawable/btn_selected"-->
+<!--        android:text="@string/btn_finish"-->
+<!--        android:textColor="#fafafa"-->
+<!--        app:cornerRadius="8dp"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/dataMBTI"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/dataMBTI" />-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout_btn_finish"
         android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:background="@drawable/box_black"
-        android:text="@string/btn_finish"
-        android:textColor="#fafafa"
-        app:cornerRadius="8dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/btn_selected"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/dataMBTI"
-        app:layout_constraintStart_toStartOf="@+id/dataMBTI" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <ImageView
+            android:id="@+id/btn_finish_cat"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_finish_text"
+            app:srcCompat="@drawable/icon_clicked" />
+
+        <TextView
+            android:id="@+id/btn_finish_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_finish"
+            android:textColor="#ffffff"
+            app:layout_constraintBottom_toBottomOf="@+id/btn_finish_cat"
+            app:layout_constraintEnd_toStartOf="@+id/btn_finish_cat"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/btn_finish_cat" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

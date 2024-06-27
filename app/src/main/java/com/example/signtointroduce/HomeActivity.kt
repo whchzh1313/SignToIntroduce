@@ -7,6 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import java.util.Random
@@ -26,7 +27,7 @@ class HomeActivity : AppCompatActivity() {
         val data_name = findViewById<TextView>(R.id.dataName)
         val data_age = findViewById<TextView>(R.id.dataAge)
         val data_MBTI = findViewById<TextView>(R.id.dataMBTI)
-        val btn_finish = findViewById<Button>(R.id.btnFinish)
+        val btn_finish = findViewById<ConstraintLayout>(R.id.layout_btn_finish)
 
         // 랜덤한 고양이 사진을 출력하기 위해
         val random = Random()
@@ -40,9 +41,9 @@ class HomeActivity : AppCompatActivity() {
             5 -> choco5.setImageResource(R.drawable.choco_5)
         }
         val userData = intent.getParcelableExtra<User>("userData")
-        data_id.text = "아이디 : ${userData?.id}"
-        data_name.text = "아이디 : ${userData?.name}"
-        data_MBTI.text = "아이디 : ${userData?.mbti}"
+        data_id.text = "${data_id.text} ${userData?.id}"
+        data_name.text = "${data_name.text} ${userData?.name}"
+        data_MBTI.text = "${data_MBTI.text} ${userData?.mbti}"
 
         btn_finish.setOnClickListener {
             finish()
